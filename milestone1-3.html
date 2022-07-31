@@ -1,0 +1,65 @@
+<html>
+
+
+  
+ <script language="JavaScript">
+ 
+document.write(" URL of the current Loading page:    " + document.URL )
+
+
+ 
+       function guessNumber() {
+  
+          const random = Math.floor(Math.random() * 10) ;
+ 
+           var r=prompt("enter number between 1 and 10"); 
+      
+      if (r == random) {
+     
+           document.write("matched" );          }
+     
+       else {
+  
+              document.write("Not Matched" );   
+     }
+       
+ }
+    
+     function CalculateArea() {
+
+        
+    var h=prompt("enter radius"); 
+      
+           document.write("The area of the circle is " + (h * h * Math.PI) );
+      
+  }
+      
+  function datatypes() {
+    
+       var s=prompt("enter any datatype"); 
+            
+     document.write("Data Type Of the given value is: " + typeof(s));
+    
+    }
+   
+ </script>
+ 
+<br><br>
+ <form name=form1 class="a">
+   
+<input type="button"
+ value="Check Is It Matched With Random Number" onClick='guessNumber();'> 
+<br><br>           
+<input type="button" 
+value="Find Area With The Given Radius" onClick='CalculateArea();'>
+<br><br>      
+    <input type="button" 
+value="Find The Type Of Your Data"
+ onClick='datatypes();'>
+<br><br> 
+   </script>
+
+</body>
+
+
+</html>
